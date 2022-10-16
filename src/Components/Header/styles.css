@@ -1,0 +1,134 @@
+.headerContainer {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 91px;
+    min-height: 91px;
+    box-sizing: border-box;
+}
+.navContainer {
+    color: gray;
+}
+.cardContainer {
+    position: absolute;
+    right: 25px;
+}
+.basketViewWithProducts {
+    position: relative;
+    border: 1px solid #d1d1d1;
+    height: 220px;
+    top: 138px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    background-color: #fff;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: space-between;
+    min-width: 250px;
+}
+.basketViewWithoutProducts {
+    position: relative;
+    border: 1px solid #d1d1d1;
+    height: 120px;
+    top: 80px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    background-color: #fff;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    min-width: 250px;
+}
+.cardItem {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+}
+.cardItem-icon {
+    color: blue;
+    padding: 8px;
+    border-right: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardItem-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+.basketView-container {
+    height: 100%;
+}
+.basket-items-container {
+    overflow-y: auto;
+    max-height: calc(100% - 23px);
+}
+.basket-item-container:first-child {
+    margin-top: 5px;
+}
+.basket-item-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.basket-item__productCount_set {
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    width: 150px;
+    max-width: 150px;
+    min-width: 150px;
+    display: flex;
+    padding: 0px 0px 0px 1px;
+    box-sizing: border-box;
+    height: 30px;
+    max-height: 30px;
+}
+.basket-item__product-name {
+    margin-right: 10px;
+}
+.basket-item__changeCount {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50px;
+    height: 100%;
+}
+.basket-item__changeCount .changeCount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    height: 50%;
+    padding-bottom: 4px;
+    box-sizing: border-box;
+}
+.payForGoodsBtn-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+.payForGoodsBtn {
+    border: 1px solid #ddd;
+    padding: 2px;
+    border-radius: 5px;
+}
+.basket-item__product-del {
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.basket-item__product-del:hover {
+    cursor: pointer;
+    color: red;
+}
